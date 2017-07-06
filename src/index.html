@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>Angular Tour of Heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfills -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+
+    <!-- Set up Lift environment variables -->
+    <script type="text/javascript">
+        window.AcquiaLift = {
+            account_id: "KAYNEN",
+            site_id: "kaynen_angular_demo",
+            liftAssetsURL: "https://lift3assets.lift.acquia.com/stable",
+            liftDecisionAPIURL: "https://us-east-1-demo-decisionapi.lift.acquia.com",
+            authEndpoint: "https://us-east-1-demo-oauth2.lift.acquia.com",
+            contentReplacementMode: "trusted"
+        };
+    </script>
+
+    <!-- Include the Lift Experience Builder script -->
+    <script type="text/javascript" src="https://lift3assets.lift.acquia.com/stable/lift.js"></script>
+  </head>
+
+  <body>
+    <div data-lift-slot="9beddc40-5106-11e7-afc1-67df351e76bd"></div>
+    <my-app>Loading...</my-app>
+  </body>
+</html>

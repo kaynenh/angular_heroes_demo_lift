@@ -1,0 +1,10 @@
+<h3>Top Heroes</h3>
+<div data-lift-slot="8c7ce780-6293-11e7-8a6e-e56d068b372a"></div>
+<div class="grid grid-pad">
+  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </a>
+</div>
+<hero-search></hero-search>
