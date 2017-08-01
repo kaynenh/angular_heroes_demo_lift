@@ -50,7 +50,8 @@ var HeroesComponent = (function () {
     };
     HeroesComponent.prototype.ngOnInit = function () {
         this.titleService.setTitle('Heroes');
-        //_tcaq.push(['capture', 'Content View']);
+        _tcaq.push(['capture', 'Content View', {'content_type': '123type', 'content_section': '1term', 'content_keywords': '2term', 'persona': '3term'}]);
+        //_tcaq.push(['captureIdentity', 'kaynen.heikkinen@acquia.com', 'email']);
         this.getHeroes();
     };
     HeroesComponent.prototype.onSelect = function (hero) {

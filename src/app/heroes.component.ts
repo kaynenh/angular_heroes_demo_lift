@@ -45,7 +45,7 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle( 'Heroes' );
-    //_tcaq.push(['capture', 'Content View']);
+    //_tcaq.push(['capture', 'Content View', {'content_type': '123type', 'content_section': '1term', 'content_keywords': '2term', 'persona': '3term'}]);
     this.getHeroes();
   }
 
